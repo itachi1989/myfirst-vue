@@ -20,6 +20,7 @@ import Swiper2, { Navigation, Pagination, EffectFade, Autoplay } from 'swiper'
 Swiper2.use([Navigation, Pagination, EffectFade, Autoplay])
 
 export default {
+  props: ['swiperList'],
   data () {
     return {
       swiperOptions: {
@@ -33,7 +34,6 @@ export default {
         },
 
       },
-      swiperList: []
     }
   },
   components: {
@@ -46,19 +46,6 @@ export default {
   directives: {
     swiper: directive
   },
-  mounted () {
-    let that = this
-    let url = '/api/mock/data.json';
-    this.axios.get(url)
-      .then(res => {
-        that.swiperList = res.data.list[0].swiperList
-        console.log(res)
-      })
-      .catch(error => {
-
-      })
-  }
-
 }
 </script>
 <style scoped lang="stylus">

@@ -10,7 +10,7 @@
       商家
     </div>
     <div class='header-right'>
-      {{date}}
+      {{city}}
       <img src='~@/assets/icon/down.png'
            style="width: 0.38rem" />
     </div>
@@ -19,22 +19,12 @@
 
 <script>
 export default {
+  props: ['city'],
   data () {
     return {
       date: {}
     }
   },
-  mounted () {
-    let that = this
-    var url = 'static/mock/data.json';
-    this.axios.get(url)
-      .then(res => {
-        that.date = res.data.list[0].city
-      })
-      .catch(error => {
-
-      })
-  }
 }
 </script>
 
