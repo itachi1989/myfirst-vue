@@ -1,29 +1,16 @@
 <template>
   <div>
-    <img v-bind:src="url" />
-    <ul>
-      <li v-for='(item,index) in arr'
-          :key='index'>
-        <input type="checkbox"
-               :value='index'
-               v-model="a" />
-        {{item}} {{index}}
-      </li>
-    </ul>
-
-    {{a}}
+    <Home></Home>
   </div>
 </template>
 
 <script>
+import Home from './components/Home/Home.vue'
 
 export default {
-  data () {
-    return {
-      url: require("./assets/u.png"),
-      a: [],
-      arr: ['a', 'b', 'c']
-    }
+  name: 'App',
+  components: {
+    Home
   }
 }
 </script>

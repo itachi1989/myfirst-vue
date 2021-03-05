@@ -1,0 +1,37 @@
+{
+  "list": [
+    {
+  "city": "北京",
+  "swiperList":[
+  {
+  "id":"01",
+  "url":"/api/img/dmc.jpg"
+  },
+  {
+  "id":"02",
+  "url":"/api/img/FC.jpg"
+  },
+  {
+	  "id":"03",
+	  "url":"/api/img/gmly.jpg"
+  },
+  {
+  "id":"04",
+	  "url":"/api/img/re.jpg"
+  },
+  {
+  "id":"05",
+  "url":"/api/img/SD.jpg"
+  },
+  {
+  "id":"06",
+  "url":"/api/img/TLOU.jpg"
+  },
+  {
+  "id":"07",
+  "url":"/api/img/zzhx.jpg"
+  }
+            ]
+  }
+    ]
+}
